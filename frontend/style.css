@@ -1,0 +1,98 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: #e5e7eb;
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  padding: 18px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARDS (CLEAN, NO EFFECTS) */
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background: #0b0f14;
+  color: #e5e7eb;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border: 1px solid #4b5563;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 11px;
+  background: #16a34a; /* emerald green */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #15803d;
+}
+
+/* RESULT BOX */
+.result {
+  margin-top: 15px;
+  font-size: 16px;
+  padding: 12px;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+/* INSIGHT */
+.insight {
+  margin-top: 10px;
+  padding: 10px;
+  background: #111827;
+  border-left: 3px solid #f59e0b; /* amber highlight */
+  border-radius: 6px;
+}
+
+/* CHART */
+canvas {
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}

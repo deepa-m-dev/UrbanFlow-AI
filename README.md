@@ -228,3 +228,8 @@ POST /predict
 ---
 
 # 👨‍💻 Author
+
+## Deepa M
+
+AI/ML Developer Aspirant
+Passionate about building intelligent real-world applications using Machine Learning and Full Stack Development.

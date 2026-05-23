@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.cluster import KMeans
@@ -57,3 +58,19 @@ pickle.dump(scaler, open("../model/scaler.pkl", "wb"))
 df.to_csv("../dataset/traffic_clustered.csv", index=False)
 
 print("🚦 UrbanFlow AI Models trained and saved successfully!")
+
+
+# Predictions
+y_pred = lr.predict(X_test)
+
+# Metrics
+r2 = lr.score(X_test, y_test)
+mae = mean_absolute_error(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+
+print("\n📊 MODEL PERFORMANCE")
+print("R² Score:", round(r2, 3))
+print("MAE:", round(mae, 3))
+print("MSE:", round(mse, 3))
+
+print("KMeans Inertia:", round(kmeans.inertia_, 3))

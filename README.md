@@ -206,6 +206,20 @@ POST /predict
 
 ---
 
+# 📈 Model Performance
+
+| Model | Metric | Score |
+|---|---|---|
+| Linear Regression | R² Score | 0.969 |
+| Linear Regression | MAE | 3.072 |
+| Linear Regression | MSE | 15.647 |
+| K-Means Clustering | Inertia | 2639.493 |
+| K-Means Clustering | Clusters | 3 |
+
+The Linear Regression model achieved strong predictive accuracy with an R² score of 0.969, effectively modeling traffic congestion patterns based on vehicle density, weather, accidents, and road conditions.
+
+---
+
 # 💡 Future Improvements
 
 * 🌍 Integration with Google Maps API
